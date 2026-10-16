@@ -1,0 +1,121 @@
+:root {
+    --color-primario: darkslateblue;
+    --gris-oscuro: #dddddd;
+    --gris-claro: #fbfbfb;
+}
+
+body {
+    margin: 0;
+    padding: 0 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+/*titulo y footer*/
+header,
+footer {
+    text-align: center;
+}
+
+main {
+    margin: 0;
+}
+
+#titulo-users {
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--gris-oscuro);
+    margin: 0 0 16px;
+}
+
+/*radios y barra busqueda*/
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.radios {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.radios label {
+    margin-right: 8px;
+}
+
+input[type="radio"] {
+    accent-color: var(--color-primario);
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--gris-oscuro);
+}
+
+/*botones*/
+.buttons {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.buttons button {
+    padding: 10px 14px;
+    background: white;
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/*tabla*/
+#users-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#users-container th,
+#users-container td {
+    border: 1px solid var(--gris-oscuro);
+    padding: 10px 8px;
+    text-align: left;
+}
+
+#users-container tbody tr:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+
+#users-container a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+#users-container input[type="checkbox"] {
+    accent-color: var(--color-primario);
+}
+
+/*avatar*/
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: block;
+}

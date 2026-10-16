@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- js -->
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Parcial 1 - División 132</h1>
+    </header>
+
+    <main>
+        <h2 id="titulo-users">Users</h2>
+        <hr>
+
+        <section class="filters">
+            <form class="radios">
+                <input type="radio" id="active" name="status" value="active" checked>
+                <label for="active">Active</label>
+    
+                <input type="radio" id="inactive" name="status" value="inactive">
+                <label for="inactive">Inactive</label>
+    
+                <input type="radio" id="all" name="status" value="all">
+                <label for="all">All</label>
+                </form>
+
+            <div class="search-bar">
+                <input type="text" id="search" name="search" placeholder="Search Users">
+            </div>
+        </section>
+
+        <section class="buttons">
+            <button type="button" id="btn-create">CREATE</button>
+            <button type="button" id="btn-deactivate" disabled>DEACTIVATE</button>
+            <button type="button" id="btn-reset" disabled>RESET PASSWORD</button>
+        </section>
+
+        <div id="users-container"></div>
+    </main>
+
+    <footer>
+        <p>Luca Kosinski</p>
+    </footer>
+
+</body>
+</html>
